@@ -1,28 +1,26 @@
-import hw_07_01.MyList;
+import hw_07_01.NewList;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("MyList int.");
-        MyList<Integer> intList = new MyList<>();
-        System.out.println("начальна кількість елементів:" + intList.getTotalNumber());
-        intList.add(11);
-        intList.add(22);
-        intList.add(33);
-        System.out.println("загальна кількість елементів:" + intList.getTotalNumber());
-        for (int i = 0; i < intList.getTotalNumber(); i++) {
-            System.out.println(intList.get(i));
+        System.out.println("newList double.");
+        NewList<Double> newList = new NewList<>();
+        System.out.println("начальна кількість елементів:" + newList.getTotalNumber());
+        System.out.println("розмір масива: " + newList.array.length);
+        newList.add(1.0);
+        System.out.println("розмір масива: " + newList.array.length);
+        newList.add(2.0);
+        System.out.println("розмір масива: " + newList.array.length);
+        newList.add(3.0);
+        System.out.println("розмір масива: " + newList.array.length);
+        newList.add(4.0);
+        System.out.println("розмір масива: " + newList.array.length);
+        newList.add(5.0);
+        System.out.println("розмір масива: " + newList.array.length);
+        System.out.println("загальна кількість елементів:" + newList.getTotalNumber());
+        for (int i = 0; i < newList.getTotalNumber(); i++) {
+            System.out.println(newList.get(i));
         }
 
-        System.out.println("MyList String.");
-        MyList<String> stringList = new MyList<>();
-        System.out.println("начальна кількість елементів:" + stringList.getTotalNumber());
-        stringList.add("aa");
-        stringList.add("bb");
-        stringList.add("cc");
-        System.out.println("загальна кількість елементів:" + stringList.getTotalNumber());
-        for (int i = 0; i < stringList.getTotalNumber(); i++) {
-            System.out.println(stringList.get(i));
-        }
     }
 }
