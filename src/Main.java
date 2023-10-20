@@ -7,15 +7,15 @@ public class Main {
         NewList<Double> newList = new NewList<>();
         System.out.println("начальна кількість елементів:" + newList.getTotalNumber());
         System.out.println("розмір масива: " + newList.array.length);
-        newList.add(1.0);
+        newList.add(1.1);
         System.out.println("розмір масива: " + newList.array.length);
-        newList.add(2.0);
+        newList.add(2.2);
         System.out.println("розмір масива: " + newList.array.length);
-        newList.add(3.0);
+        newList.add(3.3);
         System.out.println("розмір масива: " + newList.array.length);
-        newList.add(4.0);
+        newList.add(4.4);
         System.out.println("розмір масива: " + newList.array.length);
-        newList.add(5.0);
+        newList.add(5.5);
         System.out.println("розмір масива: " + newList.array.length);
         System.out.println("загальна кількість елементів:" + newList.getTotalNumber());
         for (int i = 0; i < newList.getTotalNumber(); i++) {
